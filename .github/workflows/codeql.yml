@@ -14,11 +14,9 @@ name: "CodeQL Advanced"
 on:
   push:
     branches: 
-      - master
       - feature/test-codeql
   pull_request:
     branches: 
-      - master
       - feature/test-codeql    
   schedule:
     - cron: '30 8 * * 0'
@@ -43,7 +41,6 @@ jobs:
       # only required for workflows in private repositories
       actions: read
       contents: read
-
 
     strategy:
       fail-fast: false
